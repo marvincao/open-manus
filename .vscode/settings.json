@@ -1,0 +1,50 @@
+{
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash",
+            "args": ["--cd-to-home"]
+        },
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "entity.name.function.decorator.python",
+                "settings": {
+                    "foreground": "#FF6347"
+                }
+            },
+        ]
+    },
+    "markdownlint.config": {
+        "MD041": false,
+        "MD029": false,
+        "C0114": false,
+        "C0115": false,
+        "C0116": false,
+        "MD010": false,
+    },
+    "terminal.integrated.env.windows": {
+        "PIPENV_VERBOSITY": "-1",
+        // "PYTHONWARNINGS": "ignore::UserWarning",
+        "PYTHONWARNINGS": "ignore:Kedro Viz is not yet fully compatible:UserWarning"
+    },
+    "yaml.schemas": {
+        "https://raw.githubusercontent.com/kedro-org/kedro/develop/static/jsonschema/kedro-catalog-0.19.json": [
+            "conf/**/*catalog*",
+            "file:///c%3A/Users/minca/code/src/python/heb-2019/kedro-cfm/conf/base/catalog.yml"
+        ]
+    }
+}
